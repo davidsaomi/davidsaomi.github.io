@@ -8,5 +8,5 @@ h1 {
     transform: translateY(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
-    font-size: 300px;
+    font-size: 100px;
 }
