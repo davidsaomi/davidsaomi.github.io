@@ -1,50 +1,79 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+/* Web fonts */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
 
+/* Style */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: "Montserrat";
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-
-li, a, header h1 {
-    font-weight: 500;
-    font-size: 16px;
-    color: white;
-    text-decoration: none;
+.main-header {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Ubuntu", sans-serif;
+  padding: 2.5rem 4rem;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10%;
-    background-color: black; 
+.main-header * {
+  display: inline-block;
 }
 
-.logo {
-    cursor: pointer;
+.main-header .logo {
+  float: left;
 }
 
-.nav_links {
-    list-style: none;
+.main-header nav {
+  float: right;
 }
 
-.nav_links li {
-    display: inline-block;
-    padding: 0px 20px;
+.main-header nav li {
+  margin: 0 1rem;
 }
 
-.nav_links li a {
-    transition: all 0.3s ease 0s;
+.main-header a {
+  color: #fff;
+  text-decoration: none;
 }
 
-.nav_links li a:hover {
-    color: #008cff;
+.main-header a:hover {
+  color: #d4d4d4;
 }
 
-main h1 {
-    margin: 100px;
-    text-align: center;
+.banner-text {
+  clear:both;
+  color: #fff;
+  text-align: center;
+  margin-top: 25vh;
+}
+
+.banner-text, .banner-text * {
+  display: block;
+}
+
+.banner-text h1 {
+  font-size: 3rem;
+}
+
+.banner-text p {
+  font-size: 0.75rem;
+  font-family: "Ubuntu";
+  font-weight: 300;
+  margin-top: 2rem;
+}
+
+.sign-up-btn {
+  background-color: #eb5a50;
+  font-weight: 400;
+  margin: 2rem auto 0 auto;
+  width: 10rem;
+  padding: 1rem;
+}
+
+.sign-up-btn:hover {
+  background-color: #ad433b;
 }
