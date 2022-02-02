@@ -50,7 +50,7 @@
   clear:both;
   color: #fff;
   text-align: center;
-  margin-top: 25vh;
+  margin-top: 18vh;
 }
 
 .banner-text, .banner-text * {
@@ -89,5 +89,9 @@
   .main-header .logo {
     display: inline-block;
     text-align: left;
+  }
+
+  .banner-text {
+    margin-top: 25vh;
   }
 }
