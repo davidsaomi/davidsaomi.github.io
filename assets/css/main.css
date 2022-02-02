@@ -24,11 +24,13 @@
 }
 
 .main-header .logo {
-  float: left;
+  display: block;
+  text-align: center;
 }
 
 .main-header nav {
   float: right;
+  display: none;
 }
 
 .main-header nav li {
@@ -76,4 +78,16 @@
 
 .sign-up-btn:hover {
   background-color: #ad433b;
+}
+
+/* Media querys */
+@media screen and (min-width: 700px) {
+  .main-header nav {
+    display: inline-block;
+  }
+
+  .main-header .logo {
+    display: inline-block;
+    text-align: left;
+  }
 }
